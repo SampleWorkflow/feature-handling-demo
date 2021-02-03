@@ -2,8 +2,7 @@ name: Feature request triage bot
 
 on:
   schedule:
-    # Run at 16:00 every day
-    - cron: '*/2 * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   feature_triage:
