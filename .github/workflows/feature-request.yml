@@ -1,8 +1,6 @@
 name: Feature request triage bot
 
-on:
-  schedule:
-    - cron: '*/2 * * * *'
+on: [workflow_dispatch]
 
 jobs:
   feature_triage:
