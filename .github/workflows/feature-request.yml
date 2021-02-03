@@ -6,7 +6,7 @@ on:
     - cron: '*/2 * * * *'
 
 jobs:
-  lock_closed:
+  feature_triage:
     if: github.repository == 'SampleWorkflow/feature-handling-demo'
     runs-on: ubuntu-latest
     steps:
