@@ -10,7 +10,6 @@ jobs:
       - uses: mgechev/dev-infra/github-actions/feature-request@c6f942321643811f88f785e39b7039149955d4e4
         with:
           token: ${{ secrets.FEATURE_REQUEST_BOT_TOKEN }}
-          repository: 'feature-handling-demo'
           minimum-unique-comment-authors-for-consideration: 10
           minimum-votes-for-consideration: 1
           feature-request-label: 'feature'
