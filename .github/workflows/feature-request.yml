@@ -1,8 +1,6 @@
 name: Feature request triage bot
 
-on:
-  schedule:
-    - cron: '*/1 * * * *'
+on: [workflow_dispatch]
 
 jobs:
   feature_triage:
@@ -20,9 +18,9 @@ jobs:
           in-backlog-label: 'in-backlog'
           requires-votes-label: 'votes-required'
           under-consideration-label: 'under-consideration'
-          old-issue-warn-days-duration: 0.2
-          warn-days-duration: 0.005
-          close-after-warn-days-duration: 0.005
+          old-issue-warn-days-duration: 2
+          warn-days-duration: 2
+          close-after-warn-days-duration: 2
           close-comment: >
               Thank you for submitting your feature request! Looks like during the polling
               process it didn't collect a sufficient number of votes to move to the next stage.
