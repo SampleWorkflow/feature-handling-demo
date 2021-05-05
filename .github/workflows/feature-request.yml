@@ -7,7 +7,7 @@ jobs:
     if: github.repository == 'SampleWorkflow/feature-handling-demo'
     runs-on: ubuntu-latest
     steps:
-      - uses: mgechev/dev-infra/github-actions/feature-request@4f335a4c1f01f20bf905acee2d68c7248f50f2a0
+      - uses: mgechev/dev-infra/github-actions/feature-request@c6f942321643811f88f785e39b7039149955d4e4
         with:
           token: ${{ secrets.FEATURE_REQUEST_BOT_TOKEN }}
           repository: 'feature-handling-demo'
