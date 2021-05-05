@@ -7,7 +7,7 @@ jobs:
     if: github.repository == 'SampleWorkflow/feature-handling-demo'
     runs-on: ubuntu-latest
     steps:
-      - uses: mgechev/dev-infra/github-actions/feature-request@c6f942321643811f88f785e39b7039149955d4e4
+      - uses: mgechev/dev-infra/github-actions/feature-request@4d078d9d8a004b68ab5a15015d22acfdabcbdd68
         with:
           token: ${{ secrets.FEATURE_REQUEST_BOT_TOKEN }}
           minimum-unique-comment-authors-for-consideration: 10
