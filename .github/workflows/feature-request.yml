@@ -19,6 +19,6 @@ jobs:
           under-consideration-label: 'under-consideration'
           insufficient-votes-label: 'insufficient-votes'
           close-when-no-sufficient-votes: false
-          old-issue-warn-days-duration: 0.02
-          warn-days-duration: 0.02
-          close-after-warn-days-duration: 0.02
+          old-issue-warn-days-duration: 0.03
+          warn-days-duration: 0.03
+          close-after-warn-days-duration: 0.05
