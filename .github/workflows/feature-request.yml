@@ -11,34 +11,14 @@ jobs:
         with:
           token: ${{ secrets.FEATURE_REQUEST_BOT_TOKEN }}
           repository: 'feature-handling-demo'
-          owner: 'SampleWorkflow'
           minimum-unique-comment-authors-for-consideration: 10
           minimum-votes-for-consideration: 1
           feature-request-label: 'feature'
           in-backlog-label: 'in-backlog'
           requires-votes-label: 'votes-required'
           under-consideration-label: 'under-consideration'
-          old-issue-warn-days-duration: 2
-          warn-days-duration: 2
-          close-after-warn-days-duration: 2
-          close-comment: >
-              Thank you for submitting your feature request! Looks like during the polling
-              process it didn't collect a sufficient number of votes to move to the next stage.
-
-              We want to keep Angular rich and ergonomic, but at the same time be mindful about
-              its scope and learning journey. If you think your request could live outside
-              Angular's scope, we'd encourage you to collaborate with the fantastic
-              [community](https://angular.io/resources?category=community) on publishing it
-              as an open source [package](https://angular.io/guide/creating-libraries)!
-
-              You can find more details about the feature request process in our
-              [documentation](https://github.com/angular/angular/blob/master/CONTRIBUTING.md).
-          start-voting-comment: >
-              This feature request is now candidate for our backlog! In the next phase, the community has 60 days to
-              upvote If the request receives more than 20 upvotes, we'll move it
-              to our consideration list; alternatively, we're going to close it.
-
-              You can find more details about the feature request process in our
-              [documentation](https://github.com/angular/angular/blob/master/CONTRIBUTING.md).
-          warn-comment: >
-              Just a heads up that there are 20 days until the voting process ends.
+          insufficient-votes-label: 'insufficient-votes'
+          close-when-no-sufficient-votes: false
+          old-issue-warn-days-duration: 0.02
+          warn-days-duration: 0.02
+          close-after-warn-days-duration: 0.02
